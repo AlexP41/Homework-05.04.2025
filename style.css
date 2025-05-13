@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+.raleway {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.container {
+  max-width: 180rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexbox-item {
+  flex: 1 1 0;
+  max-width: 90rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.romeo-img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+
+.flexbox-item h2 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-5rem);
+}
+
+.content-overlay p {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+  transform: translateY(6rem);
+}
+
+.very-bold {
+  font-weight: 900;
+  transition: transform 0.3s ease-in-out;
+}
+
+.white-text {
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(48, 133, 163, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  gap: 9.6rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flexbox-item:hover {
+  cursor: pointer;
+}
+
+.flexbox-item:hover .content-overlay {
+  transform: scale(1.1);
+  background-color: rgb(48, 133, 163, 0.4);
+}
+
+.flexbox-item:hover .romeo-img {
+  transform: scale(1.05);
+}
+.flexbox-item:hover h2 {
+  transform: translateY(-2rem);
+}
+
+.flexbox-item:hover .content-overlay p {
+  transform: translateY(2rem);
+}
+
+.flexbox-item:hover .content-overlay .lines:before {
+  transform: rotate(45deg);
+}
+
+.flexbox-item:hover .content-overlay .lines:after {
+  transform: rotate(-45deg);
+}
+
+.lines {
+  position: relative;
+  width: 100%;
+  height: 0.3rem;
+  margin-bottom: 1rem;
+  z-index: 5;
+}
+
+.content-overlay .lines:before,
+.content-overlay .lines:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 0.1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  z-index: 5;
+  transition: transform 0.3s ease-in-out;
+}
+
+.inside-content {
+  max-width: 80%;
+  text-align: center;
+}
+
+/* ----------------------------------- */
+/* BUBBA */
+/* ----------------------------------- */
+.bubba {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.bubba--flexbox-item {
+  flex: 1 1 0;
+  max-width: 90rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bubba-img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bubba--flexbox-item h2 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-5rem);
+}
+
+.bubba--inside-content {
+  max-width: 80%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bubba--content-overlay p {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  transform: translateY(6rem);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.bubba--content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(158, 84, 6, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  gap: 9.6rem;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.bubba--inside-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  /* background-color: red; */
+}
+
+/* .bubba--inside-content::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 0.1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    z-index: 5;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.bubba--inside-content::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 0.1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    z-index: 5;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.5);
+    opacity: 0;
+} */
+
+.bubba--inside-content::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transform: scaleX(0.5);
+  transform-origin: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.bubba--inside-content::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: all 0.3s ease;
+  transform: scaleY(0.5);
+  transform-origin: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.bubba--flexbox-item:hover .bubba--inside-content::before {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.bubba--flexbox-item:hover .bubba--inside-content::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.bubba--flexbox-item:hover {
+  cursor: pointer;
+}
+
+.bubba--flexbox-item:hover .bubba--content-overlay {
+  background-color: rgb(158, 84, 6, 0.4);
+}
+
+.bubba--flexbox-item:hover .bubba-img {
+  transform: scale(1.05);
+}
+.bubba--flexbox-item:hover h2 {
+  transform: translateY(-1rem);
+}
+
+.bubba--flexbox-item:hover .bubba--content-overlay p {
+  opacity: 1;
+  transform: translateY(1rem);
+}
+
+
+.bottom-indent {
+  margin-bottom: 9.6rem;
+}
