@@ -20,6 +20,11 @@ html {
   padding: 2rem;
 }
 
+
+
+/* ----------------------------------- */
+/* ROMEO */
+/* ----------------------------------- */
 .flexbox-container {
   display: flex;
   justify-content: space-between;
@@ -141,9 +146,12 @@ html {
   text-align: center;
 }
 
+
+
 /* ----------------------------------- */
 /* BUBBA */
 /* ----------------------------------- */
+
 .bubba {
   background-color: #f0f0f0;
   padding: 2rem;
@@ -218,38 +226,7 @@ html {
   height: 80%;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  /* background-color: red; */
 }
-
-/* .bubba--inside-content::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    top: 0;
-    height: 0.1rem;
-    background-color: #fff;
-    margin-bottom: 1rem;
-    z-index: 5;
-    transition: transform 0.3s ease-in-out;
-    transform: scale(0.5);
-    opacity: 0;
-}
-
-.bubba--inside-content::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    height: 0.1rem;
-    background-color: #fff;
-    margin-bottom: 1rem;
-    z-index: 5;
-    transition: transform 0.3s ease-in-out;
-    transform: scale(0.5);
-    opacity: 0;
-} */
 
 .bubba--inside-content::before {
   content: "";
